@@ -142,13 +142,6 @@
 		</block>
 		<!--The list of transitions.-->
 		<transition>
-			<from>1</from>
-			<to>1</to>
-			<read>!X</read>
-			<write>~</write>
-			<move>L</move>
-		</transition>
-		<transition>
 			<from>13</from>
 			<to>13</to>
 			<read>!X</read>
@@ -156,23 +149,23 @@
 			<move>L</move>
 		</transition>
 		<transition>
-			<from>1</from>
-			<to>1</to>
-			<read>!W</read>
-			<write>~</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>19</from>
-			<to>5</to>
-			<read>W</read>
-			<write>W</write>
-			<move>R</move>
-		</transition>
-		<transition>
 			<from>5</from>
 			<to>5</to>
 			<read>!M</read>
+			<write>~</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>15</from>
+			<to>10</to>
+			<read>1</read>
+			<write>X</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>10</from>
+			<to>10</to>
+			<read>!Z</read>
 			<write>~</write>
 			<move>R</move>
 		</transition>
@@ -184,10 +177,10 @@
 			<move>R</move>
 		</transition>
 		<transition>
-			<from>26</from>
-			<to>21</to>
-			<read>Y</read>
-			<write>1</write>
+			<from>0</from>
+			<to>8</to>
+			<read>m</read>
+			<write>X</write>
 			<move>R</move>
 		</transition>
 		<transition>
@@ -198,74 +191,11 @@
 			<move>R</move>
 		</transition>
 		<transition>
-			<from>14</from>
-			<to>19</to>
-			<read/>
-			<write/>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>25</from>
-			<to>0</to>
-			<read>0</read>
-			<write>0</write>
-			<move>R</move>
-		</transition>
-		<transition>
-			<from>16</from>
-			<to>17</to>
-			<read>Y</read>
-			<write>Y</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>4</from>
-			<to>1</to>
-			<read>1</read>
-			<write>X</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>13</from>
-			<to>15</to>
-			<read>X</read>
-			<write>X</write>
-			<move>R</move>
-		</transition>
-		<transition>
-			<from>15</from>
-			<to>16</to>
-			<read>0</read>
-			<write>0</write>
-			<move>R</move>
-		</transition>
-		<transition>
 			<from>10</from>
-			<to>10</to>
-			<read>!Z</read>
-			<write>~</write>
+			<to>11</to>
+			<read>Z</read>
+			<write>Z</write>
 			<move>R</move>
-		</transition>
-		<transition>
-			<from>1</from>
-			<to>1</to>
-			<read>!C</read>
-			<write>~</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>3</from>
-			<to>4</to>
-			<read>X</read>
-			<write>X</write>
-			<move>R</move>
-		</transition>
-		<transition>
-			<from>12</from>
-			<to>13</to>
-			<read>1</read>
-			<write>Y</write>
-			<move>L</move>
 		</transition>
 		<transition>
 			<from>3</from>
@@ -282,6 +212,83 @@
 			<move>R</move>
 		</transition>
 		<transition>
+			<from>16</from>
+			<to>17</to>
+			<read>Y</read>
+			<write>Y</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>15</from>
+			<to>16</to>
+			<read>0</read>
+			<write>0</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>14</from>
+			<to>19</to>
+			<read/>
+			<write/>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>26</from>
+			<to>21</to>
+			<read>Y</read>
+			<write>1</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>22</from>
+			<to>7</to>
+			<read>C</read>
+			<write>C</write>
+			<move>S</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>1</read>
+			<write>X</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>21</from>
+			<to>22</to>
+			<read/>
+			<write/>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>24</from>
+			<to>26</to>
+			<read>1</read>
+			<write>1</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>9</from>
+			<to>14</to>
+			<read>m</read>
+			<write>X</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>1</to>
+			<read>1</read>
+			<write>X</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>4</to>
+			<read>X</read>
+			<write>X</write>
+			<move>R</move>
+		</transition>
+		<transition>
 			<from>12</from>
 			<to>21</to>
 			<read>0</read>
@@ -289,39 +296,74 @@
 			<move>R</move>
 		</transition>
 		<transition>
-			<from>24</from>
-			<to>18</to>
+			<from>13</from>
+			<to>15</to>
+			<read>X</read>
+			<write>X</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>11</from>
+			<to>6</to>
+			<read>Y</read>
+			<write>Y</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>25</from>
+			<to>0</to>
 			<read>0</read>
 			<write>0</write>
 			<move>R</move>
 		</transition>
 		<transition>
-			<from>17</from>
-			<to>21</to>
-			<read>0</read>
-			<write>0</write>
-			<move>R</move>
-		</transition>
-		<transition>
-			<from>17</from>
-			<to>21</to>
-			<read>Z</read>
-			<write>Z</write>
-			<move>R</move>
-		</transition>
-		<transition>
-			<from>18</from>
-			<to>19</to>
-			<read/>
-			<write/>
+			<from>22</from>
+			<to>22</to>
+			<read>Y</read>
+			<write>1</write>
 			<move>L</move>
 		</transition>
 		<transition>
-			<from>10</from>
-			<to>11</to>
+			<from>17</from>
+			<to>21</to>
+			<read>0</read>
+			<write>0</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>17</from>
+			<to>21</to>
 			<read>Z</read>
 			<write>Z</write>
 			<move>R</move>
+		</transition>
+		<transition>
+			<from>19</from>
+			<to>5</to>
+			<read>W</read>
+			<write>W</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>1</read>
+			<write>X</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>19</from>
+			<to>19</to>
+			<read>X</read>
+			<write>1</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>22</from>
+			<to>22</to>
+			<read>X</read>
+			<write>1</write>
+			<move>L</move>
 		</transition>
 		<transition>
 			<from>1</from>
@@ -345,60 +387,11 @@
 			<move>R</move>
 		</transition>
 		<transition>
-			<from>2</from>
-			<to>3</to>
-			<read>1</read>
-			<write>X</write>
-			<move>R</move>
-		</transition>
-		<transition>
-			<from>22</from>
-			<to>22</to>
-			<read>Y</read>
-			<write>1</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>11</from>
-			<to>6</to>
-			<read>Y</read>
-			<write>Y</write>
-			<move>R</move>
-		</transition>
-		<transition>
-			<from>4</from>
-			<to>9</to>
+			<from>24</from>
+			<to>18</to>
 			<read>0</read>
 			<write>0</write>
 			<move>R</move>
-		</transition>
-		<transition>
-			<from>22</from>
-			<to>7</to>
-			<read>C</read>
-			<write>C</write>
-			<move>S</move>
-		</transition>
-		<transition>
-			<from>19</from>
-			<to>19</to>
-			<read>X</read>
-			<write>1</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>22</from>
-			<to>22</to>
-			<read>X</read>
-			<write>1</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>0</from>
-			<to>1</to>
-			<read>1</read>
-			<write>X</write>
-			<move>L</move>
 		</transition>
 		<transition>
 			<from>6</from>
@@ -415,11 +408,18 @@
 			<move>R</move>
 		</transition>
 		<transition>
-			<from>6</from>
-			<to>22</to>
-			<read/>
-			<write/>
-			<move>L</move>
+			<from>5</from>
+			<to>20</to>
+			<read>M</read>
+			<write>M</write>
+			<move>S</move>
+		</transition>
+		<transition>
+			<from>9</from>
+			<to>10</to>
+			<read>1</read>
+			<write>X</write>
+			<move>R</move>
 		</transition>
 		<transition>
 			<from>21</from>
@@ -433,20 +433,6 @@
 			<to>18</to>
 			<read>Y</read>
 			<write>1</write>
-			<move>R</move>
-		</transition>
-		<transition>
-			<from>15</from>
-			<to>10</to>
-			<read>1</read>
-			<write>X</write>
-			<move>R</move>
-		</transition>
-		<transition>
-			<from>8</from>
-			<to>9</to>
-			<read>0</read>
-			<write>0</write>
 			<move>R</move>
 		</transition>
 		<transition>
@@ -464,22 +450,36 @@
 			<move>L</move>
 		</transition>
 		<transition>
-			<from>19</from>
-			<to>19</to>
+			<from>8</from>
+			<to>9</to>
+			<read>0</read>
+			<write>0</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>9</to>
+			<read>0</read>
+			<write>0</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>12</from>
+			<to>13</to>
+			<read>1</read>
+			<write>Y</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>22</from>
+			<to>22</to>
 			<read>1</read>
 			<write>1</write>
 			<move>L</move>
 		</transition>
 		<transition>
-			<from>24</from>
-			<to>26</to>
-			<read>1</read>
-			<write>1</write>
-			<move>R</move>
-		</transition>
-		<transition>
-			<from>22</from>
-			<to>22</to>
+			<from>19</from>
+			<to>19</to>
 			<read>1</read>
 			<write>1</write>
 			<move>L</move>
@@ -499,10 +499,66 @@
 			<move>L</move>
 		</transition>
 		<transition>
+			<from>22</from>
+			<to>22</to>
+			<read>W</read>
+			<write>W</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>S</read>
+			<write>S</write>
+			<move>L</move>
+		</transition>
+		<transition>
 			<from>19</from>
 			<to>19</to>
 			<read>Z</read>
 			<write>Z</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>1</read>
+			<write>1</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>0</read>
+			<write>0</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>19</from>
+			<to>19</to>
+			<read>M</read>
+			<write>M</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>19</from>
+			<to>19</to>
+			<read>0</read>
+			<write>0</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>M</read>
+			<write>M</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>m</read>
+			<write>m</write>
 			<move>L</move>
 		</transition>
 		<transition>
@@ -529,36 +585,15 @@
 		<transition>
 			<from>19</from>
 			<to>19</to>
-			<read>F</read>
-			<write>F</write>
+			<read>m</read>
+			<write>m</write>
 			<move>L</move>
 		</transition>
 		<transition>
 			<from>19</from>
 			<to>19</to>
-			<read>M</read>
-			<write>M</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>19</from>
-			<to>19</to>
-			<read>0</read>
-			<write>0</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>22</from>
-			<to>22</to>
 			<read>F</read>
 			<write>F</write>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>22</from>
-			<to>22</to>
-			<read>W</read>
-			<write>W</write>
 			<move>L</move>
 		</transition>
 		<transition>
@@ -569,25 +604,25 @@
 			<move>L</move>
 		</transition>
 		<transition>
-			<from>19</from>
-			<to>19</to>
-			<read>m</read>
-			<write>m</write>
+			<from>22</from>
+			<to>22</to>
+			<read>F</read>
+			<write>F</write>
 			<move>L</move>
 		</transition>
 		<transition>
-			<from>9</from>
-			<to>10</to>
+			<from>17</from>
+			<to>24</to>
 			<read>1</read>
-			<write>X</write>
-			<move>R</move>
+			<write>1</write>
+			<move>L</move>
 		</transition>
 		<transition>
-			<from>9</from>
-			<to>14</to>
-			<read>m</read>
-			<write>X</write>
-			<move>R</move>
+			<from>18</from>
+			<to>19</to>
+			<read/>
+			<write/>
+			<move>L</move>
 		</transition>
 		<transition>
 			<from>23</from>
@@ -639,10 +674,10 @@
 			<move>R</move>
 		</transition>
 		<transition>
-			<from>17</from>
-			<to>24</to>
-			<read>1</read>
-			<write>1</write>
+			<from>6</from>
+			<to>22</to>
+			<read/>
+			<write/>
 			<move>L</move>
 		</transition>
 		<transition>
@@ -653,32 +688,11 @@
 			<move>L</move>
 		</transition>
 		<transition>
-			<from>0</from>
-			<to>8</to>
-			<read>m</read>
-			<write>X</write>
-			<move>R</move>
-		</transition>
-		<transition>
 			<from>19</from>
 			<to>19</to>
 			<read>S</read>
 			<write>D</write>
 			<move>L</move>
-		</transition>
-		<transition>
-			<from>21</from>
-			<to>22</to>
-			<read/>
-			<write/>
-			<move>L</move>
-		</transition>
-		<transition>
-			<from>5</from>
-			<to>20</to>
-			<read>M</read>
-			<write>M</write>
-			<move>S</move>
 		</transition>
 		<!--The list of automata-->
 		<Machine22/>
